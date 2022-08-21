@@ -509,14 +509,18 @@ the website, in dark theme
 }
 
 .product__container {
+  display: flex;
   padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem; */
 }
 
 .product__card {
   display: grid;
   position: relative;
+  justify-items: center;
+  align-items: center;
 }
 
 .product__img {
@@ -525,6 +529,8 @@ the website, in dark theme
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: 0.3s;
+  border-radius: 5%;
+  border: 5px solid #00ba987c;
 }
 
 .product__title,
@@ -646,16 +652,21 @@ the website, in dark theme
 
 /*=============== CONTACT ===============*/
 
-.donate {
-  grid-column: 1;
-}
-
-.donatebutton {
-  grid-column: 2;
+.contact {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__container {
-  row-gap: 3.5rem;
+}
+
+.donate {
+  /* grid-column: 1; */
+}
+.donatebutton {
+  /* grid-column: 2; */
 }
 
 .contact__data {
@@ -906,8 +917,9 @@ the website, in dark theme
   }
 
   .product__container {
-    grid-template-columns: 0.6fr;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -921,13 +933,17 @@ the website, in dark theme
     padding: 0 4rem;
   }
   .product__container {
-    grid-template-columns: repeat(2, 170px);
-    justify-content: center;
-    column-gap: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .footer__subscribe {
     width: 400px;
+  }
+
+  .footer__container {
+    display: flex;
   }
 }
 
@@ -955,9 +971,12 @@ the website, in dark theme
   .home__container,
   .about__container,
   .questions__container,
-  .contact__container,
-  .footer__container {
+  .contact__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    display: flex;
   }
 
   .home {
@@ -1031,7 +1050,7 @@ the website, in dark theme
   .product__container {
     padding: 4rem 0;
     grid-template-columns: repeat(3, 185px);
-    gap: 4rem 6rem;
+    /* gap: 4rem 6rem; */
   }
   .product__img {
     width: 160px;
@@ -1065,7 +1084,10 @@ the website, in dark theme
     font-size: var(--h3-font-size);
   }
   .footer__container {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
   }
   .footer__copy {
     margin: 7rem 0 2rem;
