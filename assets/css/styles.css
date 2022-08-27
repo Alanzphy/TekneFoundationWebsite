@@ -623,7 +623,7 @@ the website, in dark theme
 
 .questions__container {
   gap: 1.5rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 3rem;
 }
 
 .questions__group {
@@ -662,6 +662,7 @@ the website, in dark theme
 .questions__content {
   overflow: hidden;
   height: 0;
+  word-wrap: break-word;
 }
 
 .questions__item,
@@ -934,7 +935,8 @@ the website, in dark theme
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 270px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -959,6 +961,183 @@ the website, in dark theme
     justify-content: space-around;
     align-items: center;
   }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 310px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 250px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 290px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 350px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 420px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 450px;
+    word-wrap: break-word;
+  }
 }
 
 /* For medium devices */
@@ -982,6 +1161,13 @@ the website, in dark theme
 
   .footer__container {
     display: flex;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 640px;
+    word-wrap: break-word;
   }
 }
 
@@ -1051,6 +1237,13 @@ the website, in dark theme
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 635px;
+    word-wrap: break-word;
+  }
 }
 
 /* For large devices */
@@ -1095,19 +1288,17 @@ the website, in dark theme
   .product__description {
     padding: 0 16rem;
   }
+
   .product__container {
     padding: 4rem 0;
     grid-template-columns: repeat(3, 185px);
     /* gap: 4rem 6rem; */
   }
+
   .product__img {
     width: 160px;
   }
 
-  .product__circle {
-    width: 110px;
-    height: 110px;
-  }
   .product__title,
   .product__price {
     font-size: var(--normal-font-size);
@@ -1141,6 +1332,14 @@ the website, in dark theme
   .footer__copy {
     margin: 7rem 0 2rem;
   }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 480px;
+    text-align: justify;
+    word-wrap: break-word;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1165,5 +1364,13 @@ the website, in dark theme
 
   .scrollup {
     right: 3rem;
+  }
+
+  .questions__content {
+    overflow: hidden;
+    height: 0;
+    width: 500px;
+    text-align: justify;
+    word-wrap: break-word;
   }
 }
