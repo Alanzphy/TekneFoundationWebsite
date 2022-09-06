@@ -617,6 +617,14 @@ the website, in dark theme
 }
 
 /*=============== QUESTIONS ===============*/
+.linkcolor {
+  color: rgb(45, 45, 45);
+}
+
+.justifytext {
+  text-align: left;
+}
+
 .questions {
   background-color: var(--first-color-lighten);
 }
