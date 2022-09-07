@@ -121,6 +121,10 @@ a {
   z-index: 10;
 }
 
+.donatebutton {
+  position: relative;
+}
+
 .rutasvisitadas {
   color: #fff;
 }
